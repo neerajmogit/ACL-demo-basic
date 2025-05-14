@@ -1,0 +1,356 @@
+Enter file contents hereC:\Temp\ACL-Impl>"C:\Program Files\Maven\bin\mvn" clean spring-boot:run -Dmaven.test.skip=true
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------< com.cybage:ACL-Impl >-------------------------
+[INFO] Building ACL-Impl-proj 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.4.1:clean (default-clean) @ ACL-Impl ---
+[INFO] Deleting C:\Temp\ACL-Impl\target
+[INFO]
+[INFO] >>> spring-boot-maven-plugin:3.4.4:run (default-cli) > test-compile @ ACL-Impl >>>
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ ACL-Impl ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 12 resources from src\main\resources to target\classes
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ ACL-Impl ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 36 source files with javac [debug parameters release 21] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ ACL-Impl ---
+[INFO] Not copying test resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ ACL-Impl ---
+[INFO] Not compiling test sources
+[INFO]
+[INFO] <<< spring-boot-maven-plugin:3.4.4:run (default-cli) < test-compile @ ACL-Impl <<<
+[INFO]
+[INFO]
+[INFO] --- spring-boot-maven-plugin:3.4.4:run (default-cli) @ ACL-Impl ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-05-14T16:04:03.801+05:30  INFO 18468 --- [           main] com.cybage.AclImplApplication            : Starting AclImplApplication using Java 21.0.2 with PID 18468 (C:\Temp\ACL-Impl\target\classes started by neerajmo in C:\Temp\ACL-Impl)
+2025-05-14T16:04:03.801+05:30  INFO 18468 --- [           main] com.cybage.AclImplApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-14T16:04:03.874+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2025-05-14T16:04:03.895+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2025-05-14T16:04:03.948+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\config\ACLConfig.class]
+2025-05-14T16:04:03.948+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\config\DatabaseInitializer.class]
+2025-05-14T16:04:03.948+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\config\FilterRegisteringServletContextInitializer.class]
+2025-05-14T16:04:03.948+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\config\JwtAuthenticationFilter.class]
+2025-05-14T16:04:03.948+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\config\SecurityConfig.class]
+2025-05-14T16:04:03.964+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\controller\XAclAuthController.class]
+2025-05-14T16:04:03.964+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\exception\GlobalExceptionHandler.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Ignored because not a concrete top-level class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\repository\DocumentRepository.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Ignored because not a concrete top-level class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\repository\UserRepository.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\AclService.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\DocumentServiceImpl.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\UserDetailsServiceImpl.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\UserService.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\utils\JwtUtils.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\AclService.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\DocumentServiceImpl.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\UserDetailsServiceImpl.class]
+2025-05-14T16:04:03.979+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\UserService.class]
+2025-05-14T16:04:03.995+05:30 DEBUG 18468 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Temp\ACL-Impl\target\classes\com\cybage\utils\JwtUtils.class]
+2025-05-14T16:04:04.305+05:30  INFO 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'aclService' with a different definition: replacing [Generic bean: class=com.cybage.service.AclService; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\AclService.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=ACLConfig; factoryMethodName=aclService; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/cybage/config/ACLConfig.class]]
+2025-05-14T16:04:04.305+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'aclService' with a different definition: replacing [Generic bean: class=com.cybage.service.AclService; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\AclService.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=ACLConfig; factoryMethodName=aclService; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/cybage/config/ACLConfig.class]]
+2025-05-14T16:04:04.320+05:30  INFO 18468 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-14T16:04:04.367+05:30  INFO 18468 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2025-05-14T16:04:04.604+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'springSecurityHandlerMappingIntrospectorBeanDefinitionRegistryPostProcessor'
+2025-05-14T16:04:04.666+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2025-05-14T16:04:04.682+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'emBeanDefinitionRegistrarPostProcessor'
+2025-05-14T16:04:04.682+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerEntityManagerFactoryDependsOnPostProcessor'
+2025-05-14T16:04:04.682+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
+2025-05-14T16:04:04.698+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2025-05-14T16:04:04.713+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'conversionServicePostProcessor'
+2025-05-14T16:04:04.713+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+2025-05-14T16:04:04.713+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2025-05-14T16:04:04.713+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2025-05-14T16:04:04.713+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2025-05-14T16:04:04.729+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2025-05-14T16:04:04.729+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2025-05-14T16:04:04.729+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2025-05-14T16:04:04.729+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+2025-05-14T16:04:04.729+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jdbcConnectionDetailsHikariBeanPostProcessor'
+2025-05-14T16:04:04.729+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2025-05-14T16:04:04.745+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'methodValidationPostProcessor'
+2025-05-14T16:04:04.745+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'methodValidationPostProcessor' via factory method to bean named 'environment'
+2025-05-14T16:04:04.760+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+2025-05-14T16:04:04.776+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+2025-05-14T16:04:04.776+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+2025-05-14T16:04:04.776+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+2025-05-14T16:04:04.776+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+2025-05-14T16:04:04.776+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'projectingArgumentResolverBeanPostProcessor'
+2025-05-14T16:04:04.776+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'preFilterAuthorizationAdvisor'
+2025-05-14T16:04:04.776+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'preFilterAuthorizationMethodInterceptor'
+2025-05-14T16:04:04.796+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'preAuthorizeAuthorizationAdvisor'
+2025-05-14T16:04:04.796+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'preAuthorizeAuthorizationMethodInterceptor'
+2025-05-14T16:04:04.796+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'postFilterAuthorizationAdvisor'
+2025-05-14T16:04:04.796+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'postFilterAuthorizationMethodInterceptor'
+2025-05-14T16:04:04.796+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'postAuthorizeAuthorizationAdvisor'
+2025-05-14T16:04:04.796+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'postAuthorizeAuthorizationMethodInterceptor'
+2025-05-14T16:04:04.796+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authorizeReturnObjectAdvisor'
+2025-05-14T16:04:04.796+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authorizeReturnObjectMethodInterceptor'
+2025-05-14T16:04:04.796+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authorizationProxyFactory'
+2025-05-14T16:04:04.796+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'authorizeReturnObjectMethodInterceptor' via factory method to bean named 'authorizationProxyFactory'
+2025-05-14T16:04:04.809+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cache.config.internalCacheAdvisor'
+2025-05-14T16:04:04.809+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cache.annotation.ProxyCachingConfiguration'
+2025-05-14T16:04:04.809+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cache.config.internalJCacheAdvisor'
+2025-05-14T16:04:04.809+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cache.jcache.config.ProxyJCacheConfiguration'
+2025-05-14T16:04:04.809+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'securedAuthorizationAdvisor'
+2025-05-14T16:04:04.809+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'securedAuthorizationMethodInterceptor'
+2025-05-14T16:04:04.809+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2025-05-14T16:04:04.809+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2025-05-14T16:04:04.824+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionAttributeSource'
+2025-05-14T16:04:04.824+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionInterceptor'
+2025-05-14T16:04:04.824+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+2025-05-14T16:04:04.824+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+2025-05-14T16:04:04.824+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+2025-05-14T16:04:04.839+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jCacheOperationSource'
+2025-05-14T16:04:04.839+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jCacheInterceptor'
+2025-05-14T16:04:04.839+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jCacheInterceptor' via factory method to bean named 'jCacheOperationSource'
+2025-05-14T16:04:04.855+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.cache.config.internalJCacheAdvisor' via factory method to bean named 'jCacheOperationSource'
+2025-05-14T16:04:04.855+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.cache.config.internalJCacheAdvisor' via factory method to bean named 'jCacheInterceptor'
+2025-05-14T16:04:04.855+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'cacheOperationSource'
+2025-05-14T16:04:04.855+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'cacheInterceptor'
+2025-05-14T16:04:04.855+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'cacheInterceptor' via factory method to bean named 'cacheOperationSource'
+2025-05-14T16:04:04.855+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.cache.config.internalCacheAdvisor' via factory method to bean named 'cacheOperationSource'
+2025-05-14T16:04:04.855+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.cache.config.internalCacheAdvisor' via factory method to bean named 'cacheInterceptor'
+2025-05-14T16:04:04.871+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'tomcatServletWebServerFactory'
+2025-05-14T16:04:04.871+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
+2025-05-14T16:04:04.902+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'websocketServletWebServerCustomizer'
+2025-05-14T16:04:04.902+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+2025-05-14T16:04:04.902+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'servletWebServerFactoryCustomizer'
+2025-05-14T16:04:04.902+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+2025-05-14T16:04:04.902+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2025-05-14T16:04:04.918+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+2025-05-14T16:04:04.918+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2025-05-14T16:04:04.918+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'sslBundleRegistry'
+2025-05-14T16:04:04.918+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration'
+2025-05-14T16:04:04.918+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
+2025-05-14T16:04:04.918+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7354b8c5'
+2025-05-14T16:04:04.918+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration' via constructor to bean named 'spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties'
+2025-05-14T16:04:04.934+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'sslPropertiesSslBundleRegistrar'
+2025-05-14T16:04:04.934+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'fileWatcher'
+2025-05-14T16:04:04.934+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'sslPropertiesSslBundleRegistrar' via factory method to bean named 'fileWatcher'
+2025-05-14T16:04:04.934+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'
+2025-05-14T16:04:04.934+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2025-05-14T16:04:04.934+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'tomcatWebServerFactoryCustomizer'
+2025-05-14T16:04:04.934+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration'
+2025-05-14T16:04:04.934+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment'
+2025-05-14T16:04:04.934+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2025-05-14T16:04:04.949+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer'
+2025-05-14T16:04:04.949+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+2025-05-14T16:04:04.949+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2025-05-14T16:04:04.981+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'errorPageCustomizer'
+2025-05-14T16:04:04.981+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+2025-05-14T16:04:04.981+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2025-05-14T16:04:04.981+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dispatcherServletRegistration'
+2025-05-14T16:04:04.981+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
+2025-05-14T16:04:04.997+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dispatcherServlet'
+2025-05-14T16:04:04.997+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration'
+2025-05-14T16:04:04.997+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2025-05-14T16:04:04.997+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dispatcherServlet' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2025-05-14T16:04:05.012+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet'
+2025-05-14T16:04:05.012+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2025-05-14T16:04:05.012+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'multipartConfigElement'
+2025-05-14T16:04:05.012+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration'
+2025-05-14T16:04:05.012+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+2025-05-14T16:04:05.012+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via constructor to bean named 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+2025-05-14T16:04:05.028+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'errorPageCustomizer' via factory method to bean named 'dispatcherServletRegistration'
+2025-05-14T16:04:05.154+05:30  INFO 18468 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9192 (http)
+2025-05-14T16:04:05.170+05:30  INFO 18468 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-14T16:04:05.170+05:30  INFO 18468 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-14T16:04:05.232+05:30  INFO 18468 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-14T16:04:05.232+05:30  INFO 18468 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1367 ms
+2025-05-14T16:04:05.248+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'filterRegisteringServletContextInitializer'
+2025-05-14T16:04:05.248+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'h2Console'
+2025-05-14T16:04:05.248+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration'
+2025-05-14T16:04:05.248+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.h2.console-org.springframework.boot.autoconfigure.h2.H2ConsoleProperties'
+2025-05-14T16:04:05.248+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration' via constructor to bean named 'spring.h2.console-org.springframework.boot.autoconfigure.h2.H2ConsoleProperties'
+2025-05-14T16:04:05.248+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'securityFilterChainRegistration'
+2025-05-14T16:04:05.248+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration'
+2025-05-14T16:04:05.248+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2025-05-14T16:04:05.248+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'securityFilterChainRegistration' via factory method to bean named 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2025-05-14T16:04:05.264+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jwtAuthenticationFilter'
+2025-05-14T16:04:05.264+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestContextFilter'
+2025-05-14T16:04:05.264+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'formContentFilter'
+2025-05-14T16:04:05.264+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+2025-05-14T16:04:05.279+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'characterEncodingFilter'
+
+***********Currently registered filters:****
+
+  requestContextFilter, Class: org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter
+  jwtAuthenticationFilter, Class: com.cybage.config.JwtAuthenticationFilter
+  characterEncodingFilter, Class: org.springframework.boot.web.servlet.filter.OrderedCharacterEncodingFilter
+  springSecurityFilterChain, Class: org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean$1
+  formContentFilter, Class: org.springframework.boot.web.servlet.filter.OrderedFormContentFilter
+
+========================
+  All filters registered after custom registration:
+  requestContextFilter, Class: org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter
+  jwtAuthenticationFilter, Class: com.cybage.config.JwtAuthenticationFilter
+  characterEncodingFilter, Class: org.springframework.boot.web.servlet.filter.OrderedCharacterEncodingFilter
+  springSecurityFilterChain, Class: org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean$1
+  formContentFilter, Class: org.springframework.boot.web.servlet.filter.OrderedFormContentFilter
+2025-05-14T16:04:05.326+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'cacheManager'
+2025-05-14T16:04:05.326+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.cache.JCacheCacheConfiguration'
+2025-05-14T16:04:05.326+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'cacheManagerCustomizers'
+2025-05-14T16:04:05.326+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration'
+2025-05-14T16:04:05.326+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jCacheCacheManager'
+2025-05-14T16:04:05.326+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties'
+2025-05-14T16:04:05.326+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jCacheCacheManager' via factory method to bean named 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties'
+2025-05-14T16:04:05.797+05:30  INFO 18468 --- [           main] org.ehcache.core.EhcacheManager          : Cache 'documentPermissionsCache' created in EhcacheManager.
+2025-05-14T16:04:05.799+05:30  INFO 18468 --- [           main] org.ehcache.core.EhcacheManager          : Cache 'documentCache' created in EhcacheManager.
+2025-05-14T16:04:05.799+05:30  INFO 18468 --- [           main] org.ehcache.core.EhcacheManager          : Cache 'aclCache' created in EhcacheManager.
+2025-05-14T16:04:05.799+05:30  INFO 18468 --- [           main] org.ehcache.core.EhcacheManager          : Cache 'userCache' created in EhcacheManager.
+2025-05-14T16:04:05.897+05:30  INFO 18468 --- [           main] org.ehcache.jsr107.Eh107CacheManager     : Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Temp/ACL-Impl/target/classes/ehcache.xml,Cache=documentPermissionsCache
+2025-05-14T16:04:05.897+05:30  INFO 18468 --- [           main] org.ehcache.jsr107.Eh107CacheManager     : Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Temp/ACL-Impl/target/classes/ehcache.xml,Cache=documentCache
+2025-05-14T16:04:05.910+05:30  INFO 18468 --- [           main] org.ehcache.jsr107.Eh107CacheManager     : Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Temp/ACL-Impl/target/classes/ehcache.xml,Cache=aclCache
+2025-05-14T16:04:05.910+05:30  INFO 18468 --- [           main] org.ehcache.jsr107.Eh107CacheManager     : Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./C./Temp/ACL-Impl/target/classes/ehcache.xml,Cache=userCache
+2025-05-14T16:04:05.910+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'cacheManager' via factory method to bean named 'cacheManagerCustomizers'
+2025-05-14T16:04:05.910+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'cacheManager' via factory method to bean named 'jCacheCacheManager'
+2025-05-14T16:04:05.910+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'entityManagerFactory'
+2025-05-14T16:04:05.910+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration'
+2025-05-14T16:04:05.910+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dataSource'
+2025-05-14T16:04:05.910+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari'
+2025-05-14T16:04:05.910+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2025-05-14T16:04:05.925+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jdbcConnectionDetails'
+2025-05-14T16:04:05.925+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration'
+2025-05-14T16:04:05.925+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jdbcConnectionDetails' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2025-05-14T16:04:05.925+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dataSource' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2025-05-14T16:04:05.925+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dataSource' via factory method to bean named 'jdbcConnectionDetails'
+2025-05-14T16:04:05.941+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+2025-05-14T16:04:05.941+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties'
+2025-05-14T16:04:05.941+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'dataSource'
+2025-05-14T16:04:05.941+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+2025-05-14T16:04:05.941+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@74960bfa'
+2025-05-14T16:04:05.941+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties'
+2025-05-14T16:04:05.941+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
+2025-05-14T16:04:05.941+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
+2025-05-14T16:04:05.957+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'entityManagerFactoryBuilder'
+2025-05-14T16:04:05.957+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jpaVendorAdapter'
+2025-05-14T16:04:05.972+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'entityManagerFactoryBuilder' via factory method to bean named 'jpaVendorAdapter'
+2025-05-14T16:04:05.972+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'persistenceManagedTypes'
+2025-05-14T16:04:05.972+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'persistenceManagedTypes' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@74960bfa'
+2025-05-14T16:04:05.972+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'persistenceManagedTypes' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7354b8c5'
+2025-05-14T16:04:05.972+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2025-05-14T16:04:05.988+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'entityManagerFactory' via factory method to bean named 'entityManagerFactoryBuilder'
+2025-05-14T16:04:05.988+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'entityManagerFactory' via factory method to bean named 'persistenceManagedTypes'
+2025-05-14T16:04:06.035+05:30  INFO 18468 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-14T16:04:06.144+05:30  INFO 18468 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-14T16:04:06.197+05:30  INFO 18468 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-14T16:04:06.617+05:30  INFO 18468 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-14T16:04:06.698+05:30  INFO 18468 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-14T16:04:07.011+05:30  INFO 18468 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:acl_db user=SA
+2025-05-14T16:04:07.011+05:30  INFO 18468 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-14T16:04:07.041+05:30  WARN 18468 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-14T16:04:07.088+05:30  INFO 18468 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+        Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+        Database driver: undefined/unknown
+        Database version: 2.3.232
+        Autocommit mode: undefined/unknown
+        Isolation level: undefined/unknown
+        Minimum pool size: undefined/unknown
+        Maximum pool size: undefined/unknown
+2025-05-14T16:04:08.365+05:30  INFO 18468 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-14T16:04:08.365+05:30  INFO 18468 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-14T16:04:08.380+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'aclImplApplication'
+2025-05-14T16:04:08.380+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'ACLConfig'
+2025-05-14T16:04:08.380+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'ACLConfig' via constructor to bean named 'dataSource'
+2025-05-14T16:04:08.380+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'ACLConfig' via constructor to bean named 'cacheManager'
+2025-05-14T16:04:08.396+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'databaseInitializer'
+2025-05-14T16:04:08.396+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'userRepository'
+2025-05-14T16:04:08.401+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jpa.named-queries#1'
+2025-05-14T16:04:08.412+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jpa.UserRepository.fragments#0'
+2025-05-14T16:04:08.412+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jpaSharedEM_entityManagerFactory'
+2025-05-14T16:04:08.475+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jpaMappingContext'
+2025-05-14T16:04:08.789+05:30  INFO 18468 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-14T16:04:09.779+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'passwordEncoder'
+2025-05-14T16:04:09.779+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'securityConfig'
+2025-05-14T16:04:09.779+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'userDetailsServiceImpl'
+2025-05-14T16:04:09.779+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'userDetailsServiceImpl' via constructor to bean named 'userRepository'
+2025-05-14T16:04:09.826+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'aclService'
+2025-05-14T16:04:09.842+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'lookupStrategy'
+2025-05-14T16:04:09.842+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'aclCache'
+2025-05-14T16:04:09.842+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'permissionGrantingStrategy'
+2025-05-14T16:04:09.842+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'aclAuthorizationStrategy'
+2025-05-14T16:04:09.873+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dataSourceScriptDatabaseInitializer'
+2025-05-14T16:04:09.873+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.sql.init.DataSourceInitializationConfiguration'
+2025-05-14T16:04:09.889+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties'
+2025-05-14T16:04:09.891+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dataSourceScriptDatabaseInitializer' via factory method to bean named 'dataSource'
+2025-05-14T16:04:09.891+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dataSourceScriptDatabaseInitializer' via factory method to bean named 'spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties'
+2025-05-14T16:04:09.967+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jdbcTemplate'
+2025-05-14T16:04:09.967+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration'
+2025-05-14T16:04:09.967+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
+2025-05-14T16:04:09.967+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'dataSource'
+2025-05-14T16:04:09.967+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
+2025-05-14T16:04:09.983+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'databaseInitializer' via constructor to bean named 'userRepository'
+2025-05-14T16:04:09.983+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'databaseInitializer' via constructor to bean named 'passwordEncoder'
+2025-05-14T16:04:09.983+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'databaseInitializer' via constructor to bean named 'aclService'
+2025-05-14T16:04:09.983+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'databaseInitializer' via constructor to bean named 'jdbcTemplate'
+2025-05-14T16:04:10.004+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'XAclAuthController'
+2025-05-14T16:04:10.014+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'documentServiceImpl'
+2025-05-14T16:04:10.014+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'documentRepository'
+2025-05-14T16:04:10.014+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jpa.named-queries#0'
+2025-05-14T16:04:10.014+05:30 DEBUG 18468 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jpa.DocumentRepository.fragments#0'
+2025-05-14T16:04:10.061+05:30  WARN 18468 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'XAclAuthController': Unsatisfied dependency expressed through field 'documentAclService': Error creating bean with name 'documentServiceImpl' defined in file [C:\Temp\ACL-Impl\target\classes\com\cybage\service\DocumentServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.cybage.service.AclService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-05-14T16:04:10.061+05:30  INFO 18468 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-14T16:04:10.065+05:30  INFO 18468 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-14T16:04:10.065+05:30  INFO 18468 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-14T16:04:10.065+05:30  INFO 18468 --- [           main] org.ehcache.core.EhcacheManager          : Cache 'documentPermissionsCache' removed from EhcacheManager.
+2025-05-14T16:04:10.065+05:30  INFO 18468 --- [           main] org.ehcache.core.EhcacheManager          : Cache 'documentCache' removed from EhcacheManager.
+2025-05-14T16:04:10.065+05:30  INFO 18468 --- [           main] org.ehcache.core.EhcacheManager          : Cache 'aclCache' removed from EhcacheManager.
+2025-05-14T16:04:10.065+05:30  INFO 18468 --- [           main] org.ehcache.core.EhcacheManager          : Cache 'userCache' removed from EhcacheManager.
+2025-05-14T16:04:10.065+05:30  INFO 18468 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-05-14T16:04:10.077+05:30  INFO 18468 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger :
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-14T16:04:10.104+05:30 ERROR 18468 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   :
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.cybage.service.DocumentServiceImpl required a bean of type 'com.cybage.service.AclService' that could not be found.
+
+The injection point has the following annotations:
+        - @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.cybage.service.AclService' in your configuration.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.048 s
+[INFO] Finished at: 2025-05-14T16:04:10+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.4.4:run (default-cli) on project ACL-Impl: Process terminated with exit code: 1 -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
