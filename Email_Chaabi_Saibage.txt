@@ -1,0 +1,32 @@
+   Cybage Lap Cybage@hib2027
+
+//------------------------Github account 
+   username: neerajmo@cybage.com 
+   pwd: git@Cybage1
+//------------------------Nokia Hotspot 
+  566f50a77fb6
+//------------------------Appraisals
+   Appraisal password/tempAppraisal1
+
+   //---------------------------------------------------
+      ###  Personal AWS free tier account ###
+  //--------------------------------------------------
+   AWS root user: rajeevsingh_19@yahoo.co.in
+   AWS username:  rajm4aws
+   AWS pwd  rajeev@1Aws 
+   Acc ID: 353203139207
+   Account Alias: cybagealias
+   SignIn URL: https://cybagealias.signin.aws.amazon.com/console
+   Public DNS:http://ec2-13-200-222-82.ap-south-1.compute.amazonaws.com
+   Add: Rajeev Chiwda Galli, Lal baug, 
+
+   AWS IAM user: DevIamUser
+            pwd cybPass@1
+   IAM group policy : DevUserGroupPolicy
+   ARN: arn:   
+  aws:iam::353203139207:user/DevIamUser
+   Console login link:
+	https://353203139207.signin.aws.amazon.com/console
+
+  Instance creation:
+ Key pair name : cybKp1.pem
